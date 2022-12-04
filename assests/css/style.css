@@ -1,35 +1,52 @@
 .col-sm-4,
-.col-sm-8{
+.col-sm-8,
+.col-sm-12,
+.col-md-12{
     margin: 0;
     padding: 0;
 }
 body{
-    color: #002040;
+    color: #0A223F;
 }
 .top{
-    margin-top:  50px;
+    margin-top:  85px;
+    margin-left: 120px;
 }
 .rounded-circle{
     width: 300px;
     height: 300px;
-    border: 5px solid #002040;
+    border: 6px solid #002040;
     box-shadow: 5px 5px 10px gray;
     position: center;
 }
+.title{
+    font-size: 66px;
+}
+.address{
+    font-size: 1.1em;
+    font-weight: 500;
+}
 .before::after{
     content: "";
-    width: 30%;
-    margin: 17px;
+    width: 25%;
+    margin: 17px 0;
     background-color: #fff;
     border-top: .1em solid #FF6E00;
+}
+.top_logo{
+    position: relative;
+    bottom: 30px;
+}
+.social{
+    margin-bottom: -50px!important;
 }
 .icon a{
     color: #FF6E00;
 }
 footer{
-    margin-top: 50px;
+    margin-top: 85px;
     width: 100%;
-    height: 450px;
+    height: 410px;
     background-image: url('../images/backgroud.jpg');
     background-size: cover;
     background-position: center;
@@ -47,24 +64,33 @@ footer{
     justify-content: center;
 }
 .large_logo{
-    height: 450px;
+    height: 410px;
     z-index: 2;
 }
 .logo_container{
     width: 100%;
-    height: 450px;
+    height: 410px;
     background-color:#002040;
     opacity: .8;
     position: absolute;
-    bottom: 17;
     z-index: 1;
 }
 .company{
-    width:500px;
-    height: 450px;
-    margin-left: 80px;
+    width:410px;
+    height: 410px;
+    right: 0;
     border-radius: 50% 0 0 50%;
-    position: relative;
+    position: absolute;
     background-color: #FF6E00;
     z-index: 999999;
+}
+@media only screen and (min-width: 576px) and (max-width:991px) {
+    .top_logo{
+        margin-top: 50px;
+        margin-left: 5px;
+    }
+    .social{
+        margin-top: -40px!important;
+        margin-left: 15px;
+    }
 }
